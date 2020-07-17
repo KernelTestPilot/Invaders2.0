@@ -47,7 +47,7 @@ void Game::collisionHandler() {
 						add(explosion);
 						if (entityVec[a]->getEntity() == "Ship")
 						{
-							//quit();
+							quit();
 						}
 						entityVec.erase(entityVec.begin() + J);
 			
@@ -145,7 +145,7 @@ int Game::run() {
 				timerPlayer = 0.0f;
 			}
 		}
-
+	
 	
 		//Enemy spawn logicx
 		mSpawnTime += spawnClockInvader.restart().asSeconds();
